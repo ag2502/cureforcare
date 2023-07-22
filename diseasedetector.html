@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.nav-heading {
+    font-family: "Tahoma";
+    font-size: 35px;
+    font-weight: bold;
+    color: #01003B;
+}
+
+.nav-sub-heading {
+    color: #01003B;
+    font-size: 20px;
+}
+
+.carousall {
+    margin: 15px;
+}
+
+.nav-heading1 {
+    font-family: "Times New Roman";
+    font-size: 38px;
+    font-weight: bold;
+    color: #01003B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.f-card1 {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.f-card2 {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.f-card3 {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.f-heading {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: "Segoe UI";
+}
+
+.c-card1 {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin: 10px;
+    height: 220px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.c-card2 {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin: 10px;
+    height: 220px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.c-card3 {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin: 10px;
+    height: 220px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.image1 {
+    width: 46%;
+    padding: 20px;
+}
+
+.mini-c-card1 {
+    padding: 10px;
+}
+
+.main-container {
+    background-color: white;
+    height: 100%;
+}
+
+.aboutus-container {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+}
+
+.about-heading {
+    font-family: "Tahoma";
+    padding: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.aboutus-background {
+    background-image: url("https://img.freepik.com/free-photo/empty-hallway-background_23-2149408802.jpg?size=626&ext=jpg&ga=GA1.1.1594773190.1647966515&semt=sph");
+    height: 50vh;
+    background-size: cover;
+}
+
+.aboutus-card {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    padding: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+    border: solid;
+    border-color: white;
+}
+
+.aboutus-main-card {
+    height: 55vh;
+}
+
+.aboutus-bggg {
+    background-color: white;
+    height: 100%;
+}
+
+.image2 {
+    width: 50%;
+}
+
+.about-card {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.aboutsub {
+    padding: 20px;
+}
+
+.image3 {
+    width: 100%;
+}
+
+.symptoms-container {
+    background-color: white;
+    height: 100%;
+}
+
+.form-card {
+    margin: 20px;
+}
+
+.form-para {
+    font-weight: bold;
+    color: #01003B;
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+.symp-input {
+    font-size: 24px;
+    width: 300px;
+    margin: 20px;
+    border: solid;
+}
+
+.sub-input {
+    font-size: 26px;
+    margin: 20px;
+    background-color: #01003B;
+    color: white;
+}
+
+.symp-card {
+    margin: 10px;
+    padding: 10px;
+}
+
+.d-heading {
+    font-family: "Times New Roman";
+    font-size: 40px;
+    font-weight: bold;
+    color: #01003B;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+.s-result {
+    margin: 20px;
+    font-family: "Georgia";
+    font-size: 32px;
+}
+
+.sub-heading1 {
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.sub-para1 {
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: "Monospace";
+}
+
+.sub-heading2 {
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.sub-para2 {
+    color: white;
+    font-size: 26px;
+    margin-top: 20px;
+    font-family: "Monospace";
+}
+
+.sub-heading3 {
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.sub-para3 {
+    color: white;
+    font-size: 26px;
+    margin-top: 20px;
+    font-family: "Monospace";
+}
+
+.a-heading {
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.a-para {
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: "Monospace";
+}
+
+.ab-heading {
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.ab-para {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: "Monospace";
+}
+
+.sy-heading {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sy-para {
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: "Monospace";
+}
+
+.d-form {
+    margin: 20px;
+}
+
+.d-input {
+    font-size: 20px;
+    font-family: "Monospace";
+}
+footer {
+  background-color: #01003B;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer ul {
+  margin-bottom: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+.footer-para
+{
+    color: white;
+    font-size: 25px;
+}
+.list-inline-item{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="main-container">
+                    <nav class="navbar navbar-expand-lg bg-body-teritory">
+                        <div class="container-fluid">
+                            <a class="navbar-brand nav-heading" href="#">Cure For Care</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-sub-heading" aria-current="page" href="home.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-sub-heading" href="diseasedetector.html">Disease Detector</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-sub-heading" href="location.html">Nearby Hospitals</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-sub-heading" href="aboutus.html">About Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+        <div class="symptoms-container">
+            <img src="https://img.freepik.com/free-photo/scientist-working-laboratory-analysing-test-trial-vaccine-checking-drug-data-standing-front-pc_482257-515.jpg?w=1060&t=st=1680608052~exp=1680608652~hmac=f041d7826b1ed3574ab127a7296ebf18c65acfcd5a8d320f3723b6913a7fe57c" class="image3" />
+            <div>
+                <h1 class="d-heading">Disease Detector</h1>
+                <p class="form-para">Select Your Symptoms:</p>
+                <form class="d-form">
+                    <input type="checkbox" name="symptom" value="Runny nose"> Runny nose<br>
+                    <input type="checkbox" name="symptom" value="Sore throat"> Sore throat<br>
+                    <input type="checkbox" name="symptom" value="Cough"> Cough<br>
+                    <input type="checkbox" name="symptom" value="Fever"> Fever<br>
+                    <input type="checkbox" name="symptom" value="Body aches"> Body aches<br>
+                    <input type="checkbox" name="symptom" value="Fatigue/Tiredness"> Fatigue<br>
+                    <input type="checkbox" name="symptom" value="Sneezing"> Sneezing<br>
+                    <input type="checkbox" name="symptom" value="Itchy eyes"> Itchy eyes<br>
+                    <input type="checkbox" name="symptom" value="Headache"> Headache<br>
+                    <input type="checkbox" name="symptom" value="Chills"> Chills<br>
+                    <input type="checkbox" name="symptom" value="Loss of appetite"> Loss of appetite<br>
+                    <input type="checkbox" name="symptom" value="Shortness of breath"> Shortness of breath<br>
+                    <input type="checkbox" name="symptom" value="Nausea/Vomiting"> Nausea/Vomiting<br>
+                    <input type="checkbox" name="symptom" value="Rashes"> Rashes<br>
+                    <input type="checkbox" name="symptom" value="Restless"> Restless<br>
+                    <input type="checkbox" name="symptom" value="Sweating"> Sweating<br>
+                    <input type="checkbox" name="symptom" value="Abdominal pain"> Abdominal pain<br>
+                    <input type="checkbox" name="symptom" value="Diarrhoea"> Diarrhoea<br>
+                    <input type="checkbox" name="symptom" value="Throat irritation"> Throat irritation<br>
+                    <input type="checkbox" name="symptom" value="Indigestion"> Indigestion<br>
+                </form>
+                <button onclick="getDiseases()" class="sub-input">Check Symptoms</button>
+                <div id="diseases" class="s-result"></div>
+                <div class="symp-card">
+                    <h1 class="sy-heading">How do I know if I’m sick?</h1>
+                    <p class="sy-para">Using an online disease detector is simple. For instance, you might be a 45 year old woman from the UK who is currently experiencing headache, a fever and a sore throat .Inputting this information into the disease detector will give you some likely ‘common’ diagnoses. These include: strep throat, tonsillitis, sinusitis and flu.</p>
+                </div>
+                <div class="symp-card">
+                    <h1 class="sy-heading">What’s the difference between a sign and a symptom?</h1>
+                    <p class="sy-para">‘Sign’ and ‘symptom’ are often used interchangeably, but if we’re going to be pedantic, they do actually mean different things.If you’re feeling ill it might not be immediately obvious to somebody looking at you that you’re sick. For instance, if you’re experiencing pain, fatigue or dizziness, only you know what that feels like. These are symptoms - which can only be described by the person experiencing them.Signs, on the other hand, can be observed by an outsider too. For example, indicators to other people that you’re unwell, such as: sweating, sneezing or looking pale. Or, things that can be measured, such as a high blood pressure reading or a fever determined with a thermometer, count as signs.</p>
+                </div>
+                <div class="symp-card">
+                    <h1 class="sy-heading">How safe and accurate are disease detectors?</h1>
+                    <p class="sy-para">Most doctors agree that online disease detectors can encourage people with life-threatening symptoms to seek urgent attention, potentially saving lives. They’re also useful for reassuring patients who may have sought urgent care when they didn’t need to.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <p class="footer-para">&copy; 2023 Cure For Care. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><a href="home.html">Home</a></li>
+                    <li class="list-inline-item"><a href="diseasedetector.html">Disease Detector</a></li>
+                    <li class="list-inline-item"><a href="location.html">Nearby Hospitals</a></li>
+                    <li class="list-inline-item"><a href="aboutus.html">About Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+    </div>
+    <script>
+
+function getDiseases() {
+    // Define a dictionary of possible diseases based on the selected symptoms
+    const diseases = {
+        "Cold": ["Runny nose", "Sore throat", "Cough", "Headache", "Fever", "Fatigue/Tiredness", "Chills", "Body aches"],
+        "Flu": ["Fever", "Body aches", "Fatigue/Tiredness", "Cough", "Chills", "Loss of appetite", "Runny nose", "Sore throat", "Headche", "Shortness of breath", "Nausea/Vomiting"],
+        "Allergies": ["Sneezing", "Itchy eyes", "Runny nose", "Rashes"],
+        "Anxiety": ["Restless", "Fatigue/Tiredness", "Sweating"],
+        "Appendicitis": ["Abdominal pain", "Fever", "Chills", "Loss of appetite", "Diarrhoea", "Nausea/Vomiting"],
+        "Arthritis": ["Body aches", "Fatigue/Tiredness"],
+        "Acid Reflux": ["Abdominal pain", "Cough", "Chills", "Nausea/Vomiting"],
+        "Asthma": ["Cough", "Shortness of breath", "Throat irritation"],
+        "Anemia": ["Fatigue/Tiredness", "Shortness of breath"],
+        "Bronchitis": ["Cough", "Headache", "Fatigue/Tiredness", "Shortness of breath", "Sore throat"],
+        "Chronic fatigue syndrome": ["Body aches", "Fatigue/Tiredness", "Headache"],
+        "Cluster Headache": ["Headache"],
+        "Covid 19": ["Cough", "Headache", "Fatigue/Tiredness", "Shortness of breath", "Sore throat", "Fever", "Chills", "Body aches"],
+        "Dehydration": ["Headache", "Fatigue/Tiredness"],
+        "Depression": ["Loss of appetite", "Restless", "Fatigue/Tiredness"],
+        "Dengue": ["Body aches", "Chills", "Fatigue/Tiredness", "Fever", "Loss of appetite", "Nausea/Vomiting", "Headache"],
+        "Food Poisoning": ["Abdominal pain", "Headache", "Fatigue/Tiredness", "Chills", "Loss of appetite", "Diarrhoea", "Indigestion", "Nausea/Vomiting"],
+        "Gastroesophageal Reflux Disease (GERD)": ["Abdominal pain", "Loss of appetite", "Indigestion", "Nausea/Vomiting"],
+        "High Blood Presure": ["Headache", "Fatigue/Tiredness", "Nausea/Vomiting"],
+        "Irritable Bowel Syndrome": ["Abdominal pain", "Loss of appetite", "Diarrhoea", "Indigestion", "Nausea/Vomiting"],
+        "Kidney Stones": ["Abdominal pain", "Sweating", "Nausea/Vomiting"],
+        "Lactose Intolerance": ["Abdominal pain", "Diarrhoea", "Indigestion", "Nausea/Vomiting"],
+        "Malaria": ["Abdominal pain", "Headache", "Fatigue/Tiredness", "Chills", "Fever", "Sweating", "Diarrhoea", "Nausea/Vomiting", "Rashes"],
+        "Migraine": ["Headache"],
+        "Motion Sickness": ["Headache", "Nausea/Vomiting"],
+        "Pneumonia": ["Fever", "Headache", "Fatigue/Tiredness", "Chills", "Loss of appetite", "Sweating", "Shortness of breath"],
+        "Sinus Headache": ["Headache"],
+        "Stomach Flu": ["Abdominal pain", "Headache", "Fatigue/Tiredness", "Fever", "Loss of appetite", "Diarrhoea", "Indigestion", "Nausea/Vomiting", "Chills"],
+        "Tonsillitis": ["Cough", "Headache", "Fatigue/Tiredness", "Sore Throat", "Fever"],
+        "Tuberculosis": ["Fever", "Cough", "Fatigue/Tiredness", "Shortness of breath", "Loss of appetite", "Sweating"],
+        "Typhoid": ["Abdominal pain", "Fever", "Fatigue/Tiredness", "Chills", "Loss of appetite", "Diarrhoea", "Headache", "Nausea/Vomiting"],
+        "Tension Headache": ["Headache"],
+        "Urinary Tract Infection": ["Abdominal pain", "Fever", "Fatigue/Tiredness"]
+    };
+
+    // Get all the checked checkboxes
+    const checkboxes = document.querySelectorAll('input[name=symptom]:checked');
+
+    // If no checkboxes are checked, display a message and return
+    if (checkboxes.length === 0) {
+        document.getElementById('diseases').innerHTML = "No diseases found.";
+        return;
+    }
+
+    // Create an array of the values of the checked checkboxes
+    const selectedSymptoms = Array.from(checkboxes).map(checkbox => checkbox.value);
+
+    // Filter the diseases dictionary based on the selected symptoms
+    const possibleDiseases = Object.entries(diseases)
+        .filter(([disease, symptoms]) => selectedSymptoms.every(symptom => symptoms.includes(symptom)))
+        .map(([disease]) => disease);
+
+    // Display the list of possible diseases
+    if (possibleDiseases.length > 0) {
+        document.getElementById('diseases').innerHTML = "Possible diseases: " + possibleDiseases.join(", ");
+    } else {
+        document.getElementById('diseases').innerHTML = "No diseases found.";
+    }
+}
+    </script>
+</body>
+
+</html>

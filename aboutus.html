@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.nav-heading {
+    font-family: "Tahoma";
+    font-size: 35px;
+    font-weight: bold;
+    color: #01003B;
+}
+
+.nav-sub-heading {
+    color: #01003B;
+    font-size: 20px;
+}
+
+.carousall {
+    margin: 15px;
+}
+
+.nav-heading1 {
+    font-family: "Times New Roman";
+    font-size: 38px;
+    font-weight: bold;
+    color: #01003B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.f-card1 {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.f-card2 {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.f-card3 {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.f-heading {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: "Segoe UI";
+}
+
+.c-card1 {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin: 10px;
+    height: 220px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.c-card2 {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin: 10px;
+    height: 220px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.c-card3 {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin: 10px;
+    height: 220px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.image1 {
+    width: 46%;
+    padding: 20px;
+}
+
+.mini-c-card1 {
+    padding: 10px;
+}
+
+.main-container {
+    background-color: white;
+    height: 100%;
+}
+
+.aboutus-container {
+    background-color:#01003B;
+}
+
+.about-heading {
+    font-family: "Tahoma";
+    padding: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.aboutus-background {
+    background-image: url("https://img.freepik.com/free-photo/empty-hallway-background_23-2149408802.jpg?size=626&ext=jpg&ga=GA1.1.1594773190.1647966515&semt=sph");
+    height: 50vh;
+    background-size: cover;
+}
+
+.aboutus-card {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    padding: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+    border: solid;
+    border-color: white;
+}
+
+.aboutus-main-card {
+    height: 55vh;
+}
+
+.aboutus-bggg {
+    background-color: white;
+    height: 100%;
+}
+
+.image2 {
+    width: 50%;
+}
+
+.about-card {
+    background-image: linear-gradient(#180487,#4c419c,#6b61ba);
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.aboutsub {
+    padding: 20px;
+}
+
+.image3 {
+    width: 100%;
+}
+
+.symptoms-container {
+    background-color: white;
+    height: 100%;
+}
+
+.form-card {
+    margin: 20px;
+}
+
+.form-para {
+    font-weight: bold;
+    color: #01003B;
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+.symp-input {
+    font-size: 24px;
+    width: 300px;
+    margin: 20px;
+    border: solid;
+}
+
+.sub-input {
+    font-size: 26px;
+    margin: 20px;
+    background-color: #01003B;
+    color: white;
+}
+
+.symp-card {
+    margin: 10px;
+    padding: 10px;
+}
+
+.d-heading {
+    font-family: "Times New Roman";
+    font-size: 40px;
+    font-weight: bold;
+    color: #01003B;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+.s-result {
+    margin: 20px;
+    font-family: "Georgia";
+    font-size: 32px;
+}
+
+.sub-heading1 {
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.sub-para1 {
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: "Monospace";
+}
+
+.sub-heading2 {
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.sub-para2 {
+    color: white;
+    font-size: 26px;
+    margin-top: 20px;
+    font-family: "Monospace";
+}
+
+.sub-heading3 {
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.sub-para3 {
+    color: white;
+    font-size: 26px;
+    margin-top: 20px;
+    font-family: "Monospace";
+}
+
+.a-heading {
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.a-para {
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: "Monospace";
+}
+
+.ab-heading {
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.ab-para {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: "Monospace";
+}
+
+.sy-heading {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sy-para {
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: "Monospace";
+}
+
+.d-form {
+    margin: 20px;
+}
+
+.d-input {
+    font-size: 20px;
+    font-family: "Monospace";
+}
+footer {
+  background-color: #01003B;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer ul {
+  margin-bottom: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+.footer-para
+{
+    color: white;
+    font-size: 25px;
+}
+.list-inline-item{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="main-container">
+                    <nav class="navbar navbar-expand-lg bg-body-teritory">
+                        <div class="container-fluid">
+                            <a class="navbar-brand nav-heading" href="#">Cure For Care</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-sub-heading" aria-current="page" href="home.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-sub-heading" href="diseasedetector.html">Disease Detector</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-sub-heading" href="location.html">Nearby Hospitals</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-sub-heading" href="aboutus.html">About Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="aboutus-container">
+                    <div class="text-center">
+                        <h1 class="about-heading">About Us</h1>
+                    </div>
+                    <div class="aboutus-bggg">
+                        <div class="aboutus-background">
+                            <div class="aboutus-main-card d-flex flex-column justify-content-end">
+                                <div class="aboutus-card text-center">
+                                    <h1 class="a-heading">Welcome</h1>
+                                    <p class="a-para">Cure For Care provides all in one service for symptoms detecting, providing neraby hospitals location and storing patients data.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-card d-flex flex-row shadow">
+                            <div class="aboutsub d-flex flex-column justify-content-center text-center">
+                                <h1 class="ab-heading">Cure For Care</h1>
+                                <p class="ab-para">Our healthcare platform offers a wide range of features to help patients manage their health and stay on top of their medical needs. Our Symptoms Disease Identifier tool allows patients to input their symptoms and receive potential diagnoses, helping them to better understand their health and seek appropriate care. We also provide a comprehensive database of Primary and Specialty doctors located near the patient's area, making it easy to find the right healthcare provider. Patients can keep a track of their medical reports using our platform, ensuring they have all their health information in one place. Additionally, we help patients stay in check with their doctor by reminding them of follow-up appointments and check-ins, ensuring they receive the proper care they need. Patients can book appointments with their doctors through our platform, and set up alarms or notifications for medicine doses, so they never miss a dose. Overall, our healthcare platform offers a convenient and comprehensive solution for patients looking to manage their health more effectively, connecting them with the resources and services they need to stay healthy and well.</p>
+                            </div>
+                            <img src="https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000" class="image2 d-none d-sm-none d-md-none d-lg-block d-xl-block" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="footer-para">&copy; 2023 Cure For Care. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><a href="home.html">Home</a></li>
+                        <li class="list-inline-item"><a href="diseasedetector.html">Disease Detector</a></li>
+                        <li class="list-inline-item"><a href="location.html">Nearby Hospitals</a></li>
+                        <li class="list-inline-item"><a href="aboutus.html">About Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+        </div>
+</body>
+
+</html>
